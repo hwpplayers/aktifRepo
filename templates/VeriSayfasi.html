@@ -1,0 +1,128 @@
+<!doctype html>
+<title>KolektifAPI</title>
+
+<style type="text/css">
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#A7A1AE;
+  background-color:#1F2739;
+  margin: auto;
+}
+
+h1 {
+  font-size:3em; 
+  font-weight: 300;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h1 a {
+  color: #4DC3FA;
+  text-decoration: none;
+}
+
+h2 {
+  font-size:1.5em; 
+  font-weight: 300;
+  text-align: center;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 700;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.mavi { color: #185875; }
+
+.mavi a {
+  color: #185875;
+  text-decoration: none;
+}
+
+.sari { color: #FFF842; }
+
+table.dataframe, .dataframe th, .dataframe td {
+    border: none;
+    text-align: center;
+    margin: auto;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.KolektifAPI th {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: #185875;
+}
+
+.KolektifAPI td {
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+/* Background-color of the odd rows */
+.KolektifAPI tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.KolektifAPI tr:nth-child(even) {
+    background-color: #2C3446;
+}
+
+.KolektifAPI th {
+    background-color: #1F2739;
+}
+
+.KolektifAPI td:first-child { color: #FB667A; }
+
+.KolektifAPI tr.td:hover {
+    background-color: #464A52;
+    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+    box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.KolektifAPI td:hover {
+    background-color: #FFF842;
+    color: #403E10;
+    font-weight: bold;
+
+    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.KolektifAPI td:nth-child(4),
+.KolektifAPI th:nth-child(4) { display: none; }
+}
+</style>
+
+
+<div class=sayfa>
+  <h1><span class="mavi">&lt;</span> <a href="https://github.com/keyiflerolsun/KolektifAPI" target="_blank">Kolektif</a> <span class="mavi">&gt;</span> <span class="sari">API</span></h1>
+  
+  {% for tablo in tablolar %}
+    <h2>{{basliklar[loop.index]}}</h2>
+    {{ tablo|safe }}
+  {% endfor %}
+  
+  <h1>for <span class="mavi"><a href="http://t.me/BetikSonu" target="_blank">BetikSonu</a></span><span class="sari"> \n</span></h1>
+  <h2>created by <a href="http://t.me/keyiflerolsun" target="_blank">keyiflerolsun</a></h2>
+</div>
