@@ -1,5 +1,5 @@
 # KolektifAPI
-Python / Flask ile yazılmış REST API
+Python / Flask ile yazılmış GET API
 
 > [/eczaneGorsel?il=canakkale&ilce=merkez](https://kolektifapi.herokuapp.com/eczaneGorsel?il=canakkale&ilce=merkez)
 

@@ -1,0 +1,23 @@
+{% extends "taban.html" %}
+{% block content %}
+
+<h2>{{ baslik }}</h2>
+
+<table class="dataframe KolektifAPI">
+  <thead>
+    <tr>
+      {% for anahtar in anahtarlar %}
+      <th>{{ anahtar }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for veri in veriler %}
+    <tr>
+        <td><a href="{{ veri.Link }}" target="_blank">{{ veri.Haber }}</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+  
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "taban.html" %}
+{% block content %}
+
+<h2>{{ baslik }}</h2>
+
+<center><h3>Bizlere ilham kaynağı olan collect api'ye teşekkürler..<br>Küçük bir farkımız var; biz istekleri ücretlendirmiyoruz ve <a href="https://github.com/keyiflerolsun/KolektifAPI" target="_blank" style="color: #A7A1AE";>kaynak kodlarımız</a> gayet şeffaf :)</h3></center>
+
+<table class="dataframe KolektifAPI">
+  <tbody>
+    {% for anahtar, linkler in veriler.items() %}
+    <tr>
+      <th>{{ anahtar }}</th>
+        {% for link in linkler %}
+      <td><a href="{{ link }}" target="_blank">{{ link }}</a></td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+  
+{% endblock %}

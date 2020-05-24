@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from tabulate import tabulate
+import json
 
 istek = requests.get("https://www.worldometers.info/coronavirus/")
 corba = BeautifulSoup(istek.content, 'lxml')
@@ -24,28 +25,30 @@ pandaVeri = pd.read_html(str(tablo))[0].rename(
     }
 )
 
+jsonVeri = json.loads(pandaVeri.to_json(orient='records'))
+#print(jsonVeri)
+
+jsonCikti = json.dumps(jsonVeri, indent=2, sort_keys=False, ensure_ascii=False)
+#print(jsonCikti)
+
 gorselVeri = tabulate(pandaVeri, headers='keys', tablefmt='psql')
 #print(gorselVeri)
 
-import json
-
-sozluk = {
-    "Veri Kaynağı": "https://www.worldometers.info/coronavirus/",
-    "Veri Sağlayıcısı": "@keyiflerolsun",
-    "Veri" : json.loads(pandaVeri.to_json(orient='records'))
-}
-
-jsonVeri = json.dumps(sozluk, indent=2, sort_keys=False, ensure_ascii=False)
-
-#print(jsonVeri)
-
-#with open("koronaVeri.json", "w+") as dosya: dosya.write(jsonVeri)
+anahtarlar = [anahtar for anahtar in jsonVeri[0].keys()]
+#print(anahtarlar)
 
 
 
 
 
 
+
+def dongusuneSicayim():
+    for veri in jsonVeri:
+        for anahtar, icerik in veri.items():
+            print(veri[anahtar])
+        break
+#dongusuneSicayim()
 
 def dene(ulke):
     for veri in range(len(sozluk['Veri'])):
