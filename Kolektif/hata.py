@@ -1,12 +1,13 @@
 from Kolektif import app
-from flask import make_response, jsonify
+from flask import make_response, jsonify, send_from_directory
 import json
+import os
 
 istekler = json.load(open("Kolektif/istekler.json", "r+", encoding='utf8'))
 
-# @app.route('/favicon.ico', methods=['GET'])
-# def favicon():
-#     return send_from_directory(directory=app.root_path, filename='favicon.ico', mimetype='image/x-icon')
+@app.route('/favicon.ico', methods=['GET'])
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'), filename='img/favicon.ico', mimetype='image/x-icon')
 
 @app.errorhandler(404)
 def dortYuzDort(error):

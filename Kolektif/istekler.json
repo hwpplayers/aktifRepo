@@ -1,4 +1,13 @@
 {
+    "deprem":[
+      "/depremGorsel",
+      "/deprem"
+    ],
+    "udemy": [
+      "/udemyGorsel?kategori=python",
+      "/udemy?kategori=python",
+      "/udemy/python"
+    ],
     "korona": [
       "/koronaGorsel",
       "/koronaGorsel?Neresi=Turkey",

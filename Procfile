@@ -1,1 +1,1 @@
-web: gunicorn KolektifAPI:app
+web: python KolektifAPI.py

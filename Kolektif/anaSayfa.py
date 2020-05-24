@@ -6,8 +6,8 @@ istekler = json.load(open("Kolektif/istekler.json", "r+", encoding='utf8'))
 
 @app.route('/')
 def anaSayfa():
-    for i in istekler.keys():
-        print(i)
+ #   for i in istekler.keys():
+ #       print(i)
 
     return render_template(
         'anaSayfa.html',
