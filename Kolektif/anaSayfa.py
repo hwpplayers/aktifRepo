@@ -12,5 +12,5 @@ def anaSayfa():
     return render_template(
         'anaSayfa.html',
         veriler = istekler,
-        baslik = "Python / Flask ile yazılmış GET API"
+        baslik = "Python / Flask ile yazılmış REST API"
     )
