@@ -1,4 +1,9 @@
 {
+  "hal":[
+    "/halGorsel?tur=sebze",
+    "/hal?tur=meyve",
+    "/hal/ithal"
+  ],
   "udemy": [
     "/udemyGorsel?kategori=python",
     "/udemy?kategori=python",
