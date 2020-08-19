@@ -19,15 +19,6 @@ Python / Flask ile yazılmış REST API
 
 > [/haberGorsel](https://kolektifapi.herokuapp.com/haberGorsel)
 
-> [/koronaGorsel](https://kolektifapi.herokuapp.com/koronaGorsel)
-
-> [/koronaGorsel?Neresi=Turkey](https://kolektifapi.herokuapp.com/koronaGorsel?Neresi=Turkey)
-
-> [/korona](https://kolektifapi.herokuapp.com/korona)
-
-> [/korona?Neresi=Turkey](https://kolektifapi.herokuapp.com/korona?Neresi=Turkey)
-
-> [/korona/Turkey](https://kolektifapi.herokuapp.com/korona/Turkey)
 
 ## Proje Gelişimi
 
