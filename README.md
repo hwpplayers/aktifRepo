@@ -1,15 +1,31 @@
 # KolektifAPI
 Python / Flask ile yazılmış REST API
 
-> [/depremGorsel](https://kolektifapi.herokuapp.com/depremGorsel)
+#
 
-> [/deprem](https://kolektifapi.herokuapp.com/deprem)
+> [/halGorsel?tur=sebze](https://kolektifapi.herokuapp.com/halGorsel?tur=sebze)
+
+> [/hal?tur=meyve](https://kolektifapi.herokuapp.com/hal?tur=meyve)
+
+> [/hal/ithal](https://kolektifapi.herokuapp.com/hal/ithal)
+
+#
 
 > [/udemyGorsel?kategori=python](https://kolektifapi.herokuapp.com/udemyGorsel?kategori=python)
 
-> [/udemy?kategori=python](https://kolektifapi.herokuapp.com/udemy?kategori=python)
+> [/udemy?kategori=linux](https://kolektifapi.herokuapp.com/udemy?kategori=linux)
 
-> [/udemy/python](https://kolektifapi.herokuapp.com/udemy/python)
+> [/udemy/bash](https://kolektifapi.herokuapp.com/udemy/bash)
+
+#
+
+> [/havaGorsel?sehir=canakkale](https://kolektifapi.herokuapp.com/havaGorsel?sehir=canakkale)
+
+> [/hava?sehir=Beylikdüzü](https://kolektifapi.herokuapp.com/hava?sehir=Beylikdüzü)
+
+> [/hava/pursaklar](https://kolektifapi.herokuapp.com/hava/pursaklar)
+
+#
 
 > [/eczaneGorsel?il=canakkale&ilce=merkez](https://kolektifapi.herokuapp.com/eczaneGorsel?il=canakkale&ilce=merkez)
 
@@ -17,8 +33,21 @@ Python / Flask ile yazılmış REST API
 
 > [/eczane/mardin/nusaybin](https://kolektifapi.herokuapp.com/eczane/mardin/nusaybin)
 
+#
+
+> [/depremGorsel](https://kolektifapi.herokuapp.com/depremGorsel)
+
+> [/deprem](https://kolektifapi.herokuapp.com/deprem)
+
+#
+
+> [/akaryakit](https://kolektifapi.herokuapp.com/akaryakit)
+
+#
+
 > [/haberGorsel](https://kolektifapi.herokuapp.com/haberGorsel)
 
+#
 
 ## Proje Gelişimi
 
