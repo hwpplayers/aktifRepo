@@ -8,13 +8,6 @@
       "/udemy?kategori=python",
       "/udemy/python"
     ],
-    "korona": [
-      "/koronaGorsel",
-      "/koronaGorsel?Neresi=Turkey",
-      "/korona",
-      "/korona?Neresi=Turkey",
-      "/korona/Turkey"
-    ],
     "eczane": [
       "/eczaneGorsel?il=canakkale&ilce=merkez",
       "/eczane?il=hatay&ilce=samandag",
