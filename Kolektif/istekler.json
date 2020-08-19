@@ -1,22 +1,32 @@
 {
-    "akaryakit":[
-      "/akaryakit"
-    ],
-    "deprem":[
-      "/depremGorsel",
-      "/deprem"
-    ],
-    "udemy": [
-      "/udemyGorsel?kategori=python",
-      "/udemy?kategori=python",
-      "/udemy/python"
-    ],
-    "eczane": [
-      "/eczaneGorsel?il=canakkale&ilce=merkez",
-      "/eczane?il=hatay&ilce=samandag",
-      "/eczane/mardin/nusaybin"
-    ],
-    "haber": [
-      "/haberGorsel"
-    ]
+  "udemy": [
+    "/udemyGorsel?kategori=python",
+    "/udemy?kategori=python",
+    "/udemy/python"
+  ],
+  "hava":[
+    "/havaGorsel?sehir=canakkale",
+    "/hava?sehir=Beylikdüzü",
+    "/hava/pursaklar"
+  ],
+  "eczane": [
+    "/eczaneGorsel?il=canakkale&ilce=merkez",
+    "/eczane?il=hatay&ilce=samandag",
+    "/eczane/mardin/nusaybin"
+  ],
+  "deprem":[
+    "/depremGorsel",
+    "",
+    "/deprem"
+  ],
+  "akaryakit":[
+    "",
+    "",
+    "/akaryakit"
+  ],
+  "haber": [
+    "/haberGorsel",
+    "",
+    ""
+  ]
 }
